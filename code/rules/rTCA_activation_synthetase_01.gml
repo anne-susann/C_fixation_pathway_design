@@ -1,0 +1,65 @@
+rule [
+    ruleID "rTCA_activation_succinyl_CoA_synthetase_01"
+    labelType "term"
+    left[
+        edge [ source 0 target 3 label "-" ]
+        edge [ source 2 target 3 label "-" ] 
+        edge [ source 8 target 9 label "-" ]
+        edge [ source 11 target 12 label "-" ]       
+    ]
+    context [
+        node [ id 0 label "C" ]
+        node [ id 1 label "O" ]
+        node [ id 2 label "H" ]
+        node [ id 3 label "O" ]
+        node [ id 4 label "C" ]
+        node [ id 5 label "_X" ]
+        node [ id 6 label "_Z" ]
+        node [ id 7 label "_Y" ]
+        node [ id 8 label "S" ]
+        node [ id 9 label "H" ]
+        node [ id 10 label "CoA" ]
+        node [ id 11 label "O" ]
+        node [ id 12 label "P" ]
+        node [ id 13 label "O" ]
+        node [ id 14 label "O" ]
+        node [ id 15 label "H" ]
+        node [ id 16 label "O" ]
+        node [ id 17 label "H" ]
+        node [ id 18 label "P" ]
+        node [ id 19 label "O" ]
+        node [ id 20 label "P" ]        
+        edge [ source 0 target 1 label "=" ]
+        edge [ source 0 target 4 label "-" ]
+        edge [ source 4 target 5 label "-" ]
+        edge [ source 4 target 6 label "-" ]
+        edge [ source 4 target 7 label "-" ]
+        edge [ source 8 target 10 label "-" ]
+        edge [ source 12 target 13 label "=" ]
+        edge [ source 12 target 14 label "-" ]
+        edge [ source 14 target 15 label "-" ]
+        edge [ source 12 target 16 label "-" ]
+        edge [ source 16 target 17 label "-" ]
+        edge [ source 11 target 18 label "-" ]
+        edge [ source 18 target 19 label "-" ]
+        edge [ source 19 target 20 label "-" ]        
+    ]
+    right [
+        edge [ source 0 target 8 label "-" ]
+        edge [ source 2 target 11 label "-" ]
+        edge [ source 3 target 9 label "-" ]
+        edge [ source 3 target 12 label "-" ]
+    ]
+    constrainLabelAny [
+        label "_X"
+        labels [ label "C" label "H" ]
+    ]
+    constrainLabelAny [
+        label "_Y"
+        labels [ label "C" label "H" ]
+    ]
+    constrainLabelAny [
+        label "_Z"
+        labels [ label "C" label "H" ]
+    ]
+]

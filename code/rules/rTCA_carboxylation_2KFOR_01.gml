@@ -1,0 +1,36 @@
+rule [
+    ruleID "rTCA_carboxylation_2KFOR_PFOR_01"
+    labelType "term"
+    left [
+        edge [ source 0 target 2 label "-" ]
+        edge [ source 5 target 6 label "=" ]
+        node [ id 8 label "H+" ]
+        node [ id 9 label "H+" ]
+        node [ id 10 label "Fdred" ]
+        node [ id 11 label "Fdred" ]
+    ]
+    context [
+        node [ id 0 label "C" ]
+        node [ id 1 label "O" ]
+        node [ id 2 label "S" ]
+        node [ id 3 label "C" ]
+        node [ id 4 label "CoA" ]
+        node [ id 5 label "C" ]
+        node [ id 6 label "O" ]
+        node [ id 7 label "O" ]
+        edge [ source 0 target 1 label "=" ]
+        edge [ source 0 target 3 label "-" ]
+        edge [ source 2 target 4 label "-" ]
+        edge [ source 5 target 7 label "=" ]
+    ]
+    right [
+        edge [ source 0 target 5 label "-" ]
+        edge [ source 5 target 6 label "-" ]
+        edge [ source 6 target 9 label "-" ]
+        edge [ source 2 target 8 label "-" ]
+        node [ id 8 label "H" ]
+        node [ id 9 label "H" ]
+        node [ id 10 label "Fdox" ]
+        node [ id 11 label "Fdox" ]
+    ]
+]

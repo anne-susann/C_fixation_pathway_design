@@ -1,0 +1,72 @@
+rule [
+    ruleID "CBB_fructose-1,6-bisP_aldolase_01"
+    labelType "term"
+    left [
+        edge [ source 2 target 14 label "-" ]
+        edge [ source 3 target 16 label "=" ]
+    ]
+    context [
+        node [ id 0 label "C" ]
+        node [ id 1 label "C" ]
+        node [ id 2 label "C" ]
+        node [ id 3 label "C" ]
+        node [ id 4 label "C" ]
+        node [ id 5 label "C" ]
+        node [ id 6 label "O" ]
+        node [ id 7 label "_Y" ]
+        node [ id 8 label "H" ]
+        node [ id 9 label "H" ]
+        node [ id 10 label "O" ]
+        node [ id 11 label "O" ]
+        node [ id 12 label "H" ]
+        node [ id 13 label "H" ]
+        node [ id 14 label "H" ]
+        node [ id 15 label "H" ]
+        node [ id 16 label "O" ]
+        node [ id 17 label "H" ]
+        node [ id 18 label "O" ]
+        node [ id 19 label "H" ]
+        node [ id 20 label "H" ]
+        node [ id 21 label "O" ]
+        node [ id 22 label "_Z" ]
+        node [ id 23 label "_X" ]
+        edge [ source 0 target 1 label "-" ]
+        edge [ source 0 target 8 label "-" ]
+        edge [ source 0 target 9 label "-" ]
+        edge [ source 0 target 6 label "-" ]
+        edge [ source 6 target 7 label "-" ]
+        edge [ source 1 target 2 label "-" ]
+        edge [ source 1 target 10 label "=" ]
+        edge [ source 2 target 13 label "-" ]
+        edge [ source 2 target 11 label "-" ]
+        edge [ source 11 target 12 label "-" ]
+        edge [ source 3 target 4 label "-" ]
+        edge [ source 3 target 15 label "-" ]
+        edge [ source 4 target 5 label "-" ]
+        edge [ source 4 target 17 label "-" ]
+        edge [ source 4 target 18 label "-" ]
+        edge [ source 18 target 19 label "-" ]
+        edge [ source 5 target 20 label "-" ]
+        edge [ source 5 target 21 label "-" ]
+        edge [ source 5 target 23 label "-" ]
+        edge [ source 21 target 22 label "-" ]
+    ]
+    right [
+        edge [ source 2 target 3 label "-" ]
+        edge [ source 3 target 16 label "-" ]
+        edge [ source 14 target 16 label "-" ]
+    ]
+    constrainLabelAny [
+        label "_X"
+        labels [ label "H" label "C" ]        
+    ]
+    constrainLabelAny [
+        label "_Y"
+        labels [ label "P" ]        
+    ]
+    constrainLabelAny [
+        label "_Z"
+        labels [ label "H" label "P" ]        
+    ]
+
+]
